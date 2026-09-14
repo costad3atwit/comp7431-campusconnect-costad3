@@ -8,6 +8,7 @@
 - [ ] 5 expected questions pass
 - [ ] 2 confusing questions get a safe fallback
 - [ ] Source and owner display correctly
+- [ ] Conflicting guidance across sources is flagged, not silently resolved
 - [ ] No private data is required
 
 ## Week 1 evidence

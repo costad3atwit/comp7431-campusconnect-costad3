@@ -9,7 +9,7 @@
 ## Order of work
 1. Load approved sample pages
 2. Add search route
-3. Show source and owner
+3. Show source; show owner only once office ownership is confirmed per docs/spec.md (until then, display "owner not yet confirmed")
 4. Add fallback handoff text
 
 ## Proof
