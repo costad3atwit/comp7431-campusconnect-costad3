@@ -20,3 +20,14 @@ Use approved or synthetic information only. Do not store private student data.
 - Which sources are authoritative?
 - When should the system stop and hand off to a person?
 - How should information be classified as outdated or irrelevant automatically?
+
+## Next intent: content freshness controls
+
+### New problem
+Approved sources can become stale even when the application still works.
+
+### Proposed outcome
+Record a content owner and review date for every source, and route conflicts to a human.
+
+### Evidence that triggered this change
+See docs/incident.md.
