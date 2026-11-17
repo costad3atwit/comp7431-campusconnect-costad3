@@ -35,7 +35,7 @@ Focused retest result: CSS Still needs updating.
 ## 4. Release gate
 Release decision: GO
 Decision reason: Minor optimizations do not prohibit the release of an MVP.
-GitHub Actions run: <PASTE RUN URL>
+GitHub Actions run: https://github.com/costad3atwit/comp7431-campusconnect-costad3/actions/runs/43992551573
 Release tag if GO: v0.9.0-rc1
 ## 5. Engineering and AI Use Log
 What I tested myself: Accessibility
