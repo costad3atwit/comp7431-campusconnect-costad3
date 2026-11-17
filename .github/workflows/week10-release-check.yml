@@ -8,24 +8,23 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"  
-      - name: Compile the CampusConnect app
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+      - name: Build and test the CampusConnect app
+        working-directory: web/campusconnect-web
         run: |
           bun install --frozen-lockfile
           bun run build
           bun run test
       - name: Verify release evidence and secret hygiene
         run: |
-            test -f docs/testing/week-10/MVP_TEST_RECORD.md
-            if git ls-files | grep -Eq '(^|/)\.env$'; then
-              echo "A tracked .env file is not allowed."
-              exit 1
-            fi
-            if grep -q '<FILL IN>' docs/testing/week-10/MVP_TEST_RECORD.md; then
-              echo "Complete every Week 10 evidence field."
-              exit 1
-            fi
-            grep -q '^Release decision: GO$' docs/testing/week-10/MVP_TEST_RECORD.md
+          test -f docs/testing/week-10/MVP_TEST_RECORD.md
+          if git ls-files | grep -Eq '(^|/)\.env$'; then
+            echo "A tracked .env file is not allowed."
+            exit 1
+          fi
+          if grep -q '<FILL IN>' docs/testing/week-10/MVP_TEST_RECORD.md; then
+            echo "Complete every Week 10 evidence field."
+            exit 1
+          fi
+          grep -q '^Release decision: GO$' docs/testing/week-10/MVP_TEST_RECORD.md
