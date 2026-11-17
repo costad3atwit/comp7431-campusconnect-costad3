@@ -31,13 +31,13 @@ Keyboard plus muted-video result: Keyboard Accessiblility - PASS
 Highest-severity finding: Unused CSS
 Severity: MINOR
 Smallest repair made: No repair required, small optimizations could be made for visual assets
-Focused retest result: <FILL IN>
+Focused retest result: CSS Still needs updating.
 ## 4. Release gate
 Release decision: GO
 Decision reason: Minor optimizations do not prohibit the release of an MVP.
 GitHub Actions run: <PASTE RUN URL>
 Release tag if GO: v0.9.0-rc1
 ## 5. Engineering and AI Use Log
-What I tested myself: <FILL IN>
-What remained human-reviewed rather than automated: <FILL IN>
-Known limitation carried into Week 11 Red Teaming: <FILL IN>
+What I tested myself: Accessibility
+What remained human-reviewed rather than automated: Visual overview
+Known limitation carried into Week 11 Red Teaming: Pressing the agent about unsupported evidence.
