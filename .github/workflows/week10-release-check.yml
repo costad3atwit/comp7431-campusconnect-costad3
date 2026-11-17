@@ -14,9 +14,7 @@ jobs:
           python-version: "3.12"  
       - name: Compile the CampusConnect app
         run: |
-            test -f app.py
-            test -f requirements.txt
-            python -m py_compile app.py  
+            npm run build
       - name: Verify release evidence and secret hygiene
         run: |
             test -f docs/testing/week-10/MVP_TEST_RECORD.md
