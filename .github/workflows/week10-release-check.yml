@@ -14,7 +14,9 @@ jobs:
           python-version: "3.12"  
       - name: Compile the CampusConnect app
         run: |
-            npm run build
+          bun install --frozen-lockfile
+          bun run build
+          bun run test
       - name: Verify release evidence and secret hygiene
         run: |
             test -f docs/testing/week-10/MVP_TEST_RECORD.md
